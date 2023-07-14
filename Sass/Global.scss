@@ -3,10 +3,56 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  transition: all 150ms ease-in-out;
+  transition: all 120ms ease-in-out;
   list-style: none;
+  font-family: $font-fam;
 }
 a {
   color: #fff;
+  text-decoration: none;
 }
-
+body {
+  background-color: $first-color;
+}
+.z-header-box {
+  margin-top: 1.25rem;
+  background-color: $sec-color;
+  box-shadow: $box-shadow1;
+  border-radius: $border-raduce;
+  padding: 0.6rem 0;
+}
+.z-title {
+  font-size: $subject-txt;
+  font-weight: $subject-txt-w;
+  color: $third-color;
+  margin: 0 1.56rem;
+}
+.z-nav-links {
+  gap: 3.12rem;
+  margin-bottom: 0;
+  color: $light-color;
+  font-size: $nav-txt;
+  & li:hover {
+    scale: $hover-scale;
+  }
+  & li:active {
+    scale: $click-scale;
+  }
+}
+.z-user-box {
+  background-color: $first-color;
+  border-radius: $border-raduce;
+  box-shadow: $box-shadow1;
+  margin: 0 1.56rem;
+  .z-user-icon {
+    color: $third-color;
+    font-size: 1.25rem;
+    padding: 1.06rem;
+  }
+  &:hover {
+    scale: $hover-scale;
+  }
+  &:active {
+    scale: $click-scale;
+  }
+}

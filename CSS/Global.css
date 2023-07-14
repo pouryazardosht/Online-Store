@@ -2,10 +2,62 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  transition: all 150ms ease-in-out;
+  transition: all 120ms ease-in-out;
   list-style: none;
+  font-family: "Vazir";
 }
 
 a {
   color: #fff;
+  text-decoration: none;
+}
+
+body {
+  background-color: #181818;
+}
+
+.z-header-box {
+  margin-top: 1.25rem;
+  background-color: #262626;
+  box-shadow: 0px 5px 8px 0px rgba(22, 22, 22, 0.26);
+  border-radius: 0.625rem;
+  padding: 0.6rem 0;
+}
+
+.z-title {
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: #ecc600;
+  margin: 0 1.56rem;
+}
+
+.z-nav-links {
+  gap: 3.12rem;
+  margin-bottom: 0;
+  color: #f1f1f1;
+  font-size: 1.1rem;
+}
+.z-nav-links li:hover {
+  scale: 0.97;
+}
+.z-nav-links li:active {
+  scale: 0.94;
+}
+
+.z-user-box {
+  background-color: #181818;
+  border-radius: 0.625rem;
+  box-shadow: 0px 5px 8px 0px rgba(22, 22, 22, 0.26);
+  margin: 0 1.56rem;
+}
+.z-user-box .z-user-icon {
+  color: #ecc600;
+  font-size: 1.25rem;
+  padding: 1.06rem;
+}
+.z-user-box:hover {
+  scale: 0.97;
+}
+.z-user-box:active {
+  scale: 0.94;
 }/*# sourceMappingURL=Global.css.map */
