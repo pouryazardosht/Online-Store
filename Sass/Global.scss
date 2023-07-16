@@ -32,12 +32,34 @@ body {
   margin-bottom: 0;
   color: $light-color;
   font-size: $nav-txt;
-  & li:hover {
-    scale: $hover-scale;
-  }
-  & li:active {
-    scale: $click-scale;
-  }
+}
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all 0.5s;
+}
+nav.stroke ul li a,
+nav.fill ul li a {
+  position: relative;
+}
+nav ul li a:hover {
+  color: $third-color;
+}
+nav.stroke ul li a:after,
+nav.fill ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: ".";
+  color: transparent;
+  background: $third-color;
+  height: 1px;
+}
+nav.stroke ul li a:hover:after {
+  width: 100%;
 }
 .z-user-box {
   background-color: $first-color;
