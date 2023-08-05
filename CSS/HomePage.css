@@ -1,1 +1,7 @@
-/*# sourceMappingURL=HomePage.css.map */
+.sliderConteiner {
+  border-radius: 0.625rem !important;
+}
+.sliderConteiner .sliderBox {
+  height: 28rem;
+  margin-top: 3rem;
+}/*# sourceMappingURL=HomePage.css.map */
