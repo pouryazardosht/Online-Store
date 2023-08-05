@@ -7,6 +7,9 @@
   list-style: none;
   font-family: $font-fam;
 }
+p {
+  margin-bottom: 0 !important;
+}
 a {
   color: #fff;
   text-decoration: none;
@@ -76,5 +79,46 @@ nav.stroke ul li a:hover:after {
   }
   &:active {
     scale: $click-scale;
+  }
+}
+.myCard {
+  background-color: $sec-color;
+  border-radius: $border-raduce;
+  box-shadow: $box-shadow1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.9rem;
+  padding: 1.6rem 1.9rem;
+  .imgBox {
+    img {
+      width: 12rem;
+      height: 12rem;
+      border-radius: $border-raduce;
+    }
+    border-radius: $border-raduce;
+  }
+  .productName {
+    color: $light-color;
+    font-size: $product-txt;
+  }
+  .productCost {
+    color: $light-color;
+    font-size: $nav-txt;
+  }
+  button {
+    font-size: $nav-txt;
+    color: $first-color;
+    background-color: $third-color;
+    border-radius: $border-raduce;
+    padding: 0.3rem 3rem;
+    border: none;
+    box-shadow: $box-shadow1;
+    &:hover {
+      scale: $hover-scale;
+    }
+    &:active {
+      scale: $click-scale;
+    }
   }
 }

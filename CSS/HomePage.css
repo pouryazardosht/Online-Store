@@ -4,4 +4,20 @@
 .sliderConteiner .sliderBox {
   height: 28rem;
   margin-top: 3rem;
+}
+
+.cardsContainer {
+  margin-top: 3rem;
+}
+.cardsContainer h3 {
+  display: flex;
+  justify-content: center;
+  color: #f1f1f1;
+  font-size: 1.5rem;
+}
+.cardsContainer .cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 3rem;
 }/*# sourceMappingURL=HomePage.css.map */

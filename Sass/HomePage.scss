@@ -6,3 +6,18 @@
     margin-top: 3rem;
   }
 }
+.cardsContainer {
+  margin-top: 3rem;
+  h3 {
+    display: flex;
+    justify-content: center;
+    color: $light-color;
+    font-size: $subject-txt;
+  }
+  .cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 3rem;
+  }
+}
