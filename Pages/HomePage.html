@@ -17,12 +17,13 @@
       rel="stylesheet"
       href="https://unpkg.com/flickity@2/dist/flickity.min.css"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="../CSS/Global.css" />
     <link rel="stylesheet" href="../CSS/HomePage.css" />
     <title>صفحه اصلی</title>
   </head>
   <body>
-    <header>
+    <header data-aos="fade-down" data-aos-duration="1000">
       <section
         class="container z-header-box d-none d-md-flex align-items-center justify-content-between"
       >
@@ -64,10 +65,10 @@
           </div>
         </div>
       </section>
-      <section class="cardsContainer">
+      <section class="cardsContainer container">
         <h3>فروش ویژه</h3>
         <div class="cards">
-          <div class="myCard">
+          <div data-aos="flip-left" data-aos-duration="1000" class="myCard">
             <div class="imgBox">
               <img src="../Images/Products/Poco X5.jpg" />
             </div>
@@ -75,38 +76,42 @@
             <p class="productCost">۱۳,۲۶۹,۰۰۰ تومان</p>
             <button>خرید</button>
           </div>
-          <div class="myCard">
+          <div data-aos="flip-left" data-aos-duration="1000" class="myCard">
             <div class="imgBox">
-              <img src="../Images/Products/Poco X5.jpg" />
+              <img src="../Images/Products/iphone13.jpg" />
             </div>
-            <p class="productName">Poco X5 Pro 5G</p>
-            <p class="productCost">۱۳,۲۶۹,۰۰۰ تومان</p>
+            <p class="productName">iPhone 13 CH</p>
+            <p class="productCost">۳۸,۹۵۰,۰۰۰ تومان</p>
             <button>خرید</button>
           </div>
-          <div class="myCard">
+          <div data-aos="flip-right" data-aos-duration="1000" class="myCard">
             <div class="imgBox">
-              <img src="../Images/Products/Poco X5.jpg" />
+              <img src="../Images/Products/s21.jpg" />
             </div>
-            <p class="productName">Poco X5 Pro 5G</p>
-            <p class="productCost">۱۳,۲۶۹,۰۰۰ تومان</p>
+            <p class="productName">Galaxy S21 FE 5G</p>
+            <p class="productCost">۱۹,۵۹۹,۰۰۰ تومان</p>
             <button>خرید</button>
           </div>
-          <div class="myCard">
+          <div data-aos="flip-right" data-aos-duration="1000" class="myCard">
             <div class="imgBox">
-              <img src="../Images/Products/Poco X5.jpg" />
+              <img src="../Images/Products/a51.jpg" />
             </div>
-            <p class="productName">Poco X5 Pro 5G</p>
-            <p class="productCost">۱۳,۲۶۹,۰۰۰ تومان</p>
+            <p class="productName">Galaxy A54 5G</p>
+            <p class="productCost">۱۸,۸۵۰,۰۰۰ تومان</p>
             <button>خرید</button>
           </div>
         </div>
       </section>
-      <section class="sortContainer">
+      <section class="sortContainer container">
         <h3>دسته بندی ها</h3>
         <div class="sortCardContainer">
           <div class="sortCards">
             <a href="#">
-              <div class="sortCard">
+              <div
+                data-aos="fade-down-left"
+                data-aos-duration="1000"
+                class="sortCard"
+              >
                 <i class="bx bx-image-alt"></i>
                 <p>نام دسته بندی</p>
               </div>
@@ -114,7 +119,11 @@
           </div>
           <div class="sortCards">
             <a href="#">
-              <div class="sortCard">
+              <div
+                data-aos="fade-down-left"
+                data-aos-duration="1000"
+                class="sortCard"
+              >
                 <i class="bx bx-image-alt"></i>
                 <p>نام دسته بندی</p>
               </div>
@@ -122,7 +131,11 @@
           </div>
           <div class="sortCards">
             <a href="#">
-              <div class="sortCard">
+              <div
+                data-aos="fade-down-right"
+                data-aos-duration="1000"
+                class="sortCard"
+              >
                 <i class="bx bx-image-alt"></i>
                 <p>نام دسته بندی</p>
               </div>
@@ -130,7 +143,11 @@
           </div>
           <div class="sortCards">
             <a href="#">
-              <div class="sortCard">
+              <div
+                data-aos="fade-down-right"
+                data-aos-duration="1000"
+                class="sortCard"
+              >
                 <i class="bx bx-image-alt"></i>
                 <p>نام دسته بندی</p>
               </div>
@@ -138,16 +155,80 @@
           </div>
         </div>
       </section>
-      <section>
-        
+      <section class="virtin container">
+        <a href="#">
+          <div data-aos="fade-left" data-aos-duration="1000">
+            <img src="../Images/vitrin-3.jpg" />
+          </div>
+        </a>
+        <a href="#">
+          <div data-aos="fade-right" data-aos-duration="1000">
+            <img src="../Images/1592-monitor-3Gane.jpg" />
+          </div>
+        </a>
+      </section>
+      <section
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        class="newsContainer container"
+      >
+        <h5>عضویت در خبرنامه</h5>
+        <div>
+          <input type="text" placeholder="ایمیل خود را وارد کنید" />
+          <button>عضویت</button>
+        </div>
       </section>
     </main>
+    <footer>
+      <section class="w-100 footerBox">
+        <div class="upFoot container">
+          <h6>فروشگاه</h6>
+          <div>
+            <nav class="stroke">
+              <ul class="d-flex align-items-center z-nav-links">
+                <li>
+                  <a href="#">صفحه اصلی</a>
+                </li>
+                <li>
+                  <a href="#">دسته بندی</a>
+                </li>
+                <li>
+                  <a href="#">فروش ویژه</a>
+                </li>
+                <li>
+                  <a href="#">درباره ما</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div>
+            <a href="#">
+              <img src="../Images/Logos/LinkedIn.svg" />
+            </a>
+            <a href="#">
+              <img src="../Images/Logos/Twitter.svg" />
+            </a>
+            <a href="#">
+              <img src="../Images/Logos/Instagram.svg" />
+            </a>
+            <a href="#">
+              <img src="../Images/Logos/Facebook.svg" />
+            </a>
+          </div>
+        </div>
+        <hr class="bg-light container" />
+        <div>
+          <p class="downTxt">تمامی حقوق این وبسایت محفوظ است</p>
+        </div>
+      </section>
+    </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
       crossorigin="anonymous"
     ></script>
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="../Script/index.js"></script>
   </body>
 </html>

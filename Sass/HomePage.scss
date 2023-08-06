@@ -32,6 +32,12 @@
       padding: 1.5rem 0;
       border-radius: $border-raduce;
       background-color: $sec-color;
+      &:hover {
+        scale: $hover-scale;
+      }
+      &:active {
+        scale: $click-scale;
+      }
       i {
         background-color: $first-color;
         padding: 1.4rem;
@@ -44,6 +50,60 @@
         color: $light-color;
         font-size: $product-txt;
       }
+    }
+  }
+}
+.virtin {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  div {
+    border-radius: $border-raduce !important;
+    img {
+      border-radius: $border-raduce !important;
+      width: 36.6rem;
+      height: 20rem;
+    }
+    background-color: $sec-color;
+  }
+}
+.newsContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2.5rem 3rem;
+  margin-top: 3rem;
+  background-color: $sec-color;
+  border-radius: $border-raduce;
+  box-shadow: $box-shadow1;
+  h5 {
+    color: $light-color;
+    font-size: $subject-txt-w;
+    margin-bottom: 0;
+  }
+  div {
+    input {
+      background-color: $light-color;
+      border-radius: $border-raduce;
+      border: none;
+      padding: 0.75rem;
+      width: 20rem;
+      &:focus {
+        outline: none;
+        box-shadow: 0px 0px 5px 1px $third-color;
+      }
+      &::placeholder {
+        direction: rtl;
+        color: $sec-color;
+      }
+    }
+    button {
+      background-color: $third-color;
+      border-radius: $border-raduce;
+      color: $first-color;
+      border: none;
+      padding: 0.75rem 1.5rem;
     }
   }
 }

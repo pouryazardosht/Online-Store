@@ -35,6 +35,12 @@
   border-radius: 0.625rem;
   background-color: #262626;
 }
+.sortContainer .sortCardContainer .sortCard:hover {
+  scale: 0.97;
+}
+.sortContainer .sortCardContainer .sortCard:active {
+  scale: 0.94;
+}
 .sortContainer .sortCardContainer .sortCard i {
   background-color: #181818;
   padding: 1.4rem;
@@ -46,4 +52,62 @@
 .sortContainer .sortCardContainer .sortCard p {
   color: #f1f1f1;
   font-size: 1.25rem;
+}
+
+.virtin {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.virtin div {
+  border-radius: 0.625rem !important;
+  background-color: #262626;
+}
+.virtin div img {
+  border-radius: 0.625rem !important;
+  width: 36.6rem;
+  height: 20rem;
+}
+
+.newsContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2.5rem 3rem;
+  margin-top: 3rem;
+  background-color: #262626;
+  border-radius: 0.625rem;
+  box-shadow: 0px 5px 8px 0px rgba(22, 22, 22, 0.26);
+}
+.newsContainer h5 {
+  color: #f1f1f1;
+  font-size: 900;
+  margin-bottom: 0;
+}
+.newsContainer div input {
+  background-color: #f1f1f1;
+  border-radius: 0.625rem;
+  border: none;
+  padding: 0.75rem;
+  width: 20rem;
+}
+.newsContainer div input:focus {
+  outline: none;
+  box-shadow: 0px 0px 5px 1px #ecc600;
+}
+.newsContainer div input::-moz-placeholder {
+  direction: rtl;
+  color: #262626;
+}
+.newsContainer div input::placeholder {
+  direction: rtl;
+  color: #262626;
+}
+.newsContainer div button {
+  background-color: #ecc600;
+  border-radius: 0.625rem;
+  color: #181818;
+  border: none;
+  padding: 0.75rem 1.5rem;
 }/*# sourceMappingURL=HomePage.css.map */

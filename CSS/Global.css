@@ -140,4 +140,32 @@ h3 {
 }
 .myCard button:active {
   scale: 0.94;
+}
+
+.footerBox {
+  padding: 4.5rem 0;
+  margin-top: 9rem;
+  background-color: #262626;
+}
+.footerBox .upFoot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footerBox .upFoot .z-nav-links li a {
+  font-size: 900 !important;
+}
+.footerBox .upFoot h6 {
+  margin-bottom: 0;
+  color: #f1f1f1;
+  font-size: 1.25rem;
+}
+.footerBox hr {
+  color: #f1f1f1;
+  background-color: #f1f1f1;
+}
+.footerBox .downTxt {
+  color: #f1f1f1;
+  display: flex;
+  justify-content: center;
 }/*# sourceMappingURL=Global.css.map */

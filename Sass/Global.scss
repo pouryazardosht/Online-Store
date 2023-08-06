@@ -128,3 +128,34 @@ h3 {
     }
   }
 }
+.footerBox {
+  padding: 4.5rem 0;
+  margin-top: 9rem;
+  background-color: $sec-color;
+  .upFoot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .z-nav-links {
+      li {
+        a {
+          font-size: $subject-txt-w !important;
+        }
+      }
+    }
+    h6 {
+      margin-bottom: 0;
+      color: $light-color;
+      font-size: $product-txt;
+    }
+  }
+  hr {
+    color: $light-color;
+    background-color: $light-color;
+  }
+  .downTxt {
+    color: $light-color;
+    display: flex;
+    justify-content: center;
+  }
+}

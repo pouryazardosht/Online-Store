@@ -5,3 +5,4 @@ var flkty = new Flickity(elem, {
   pageDots: false,
   draggable: false,
 });
+AOS.init();
