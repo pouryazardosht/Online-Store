@@ -81,6 +81,12 @@ nav.stroke ul li a:hover:after {
     scale: $click-scale;
   }
 }
+h3 {
+  display: flex;
+  justify-content: center;
+  color: $light-color;
+  font-size: $subject-txt;
+}
 .myCard {
   background-color: $sec-color;
   border-radius: $border-raduce;

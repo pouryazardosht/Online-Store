@@ -93,6 +93,13 @@ nav.stroke ul li a:hover:after {
   scale: 0.94;
 }
 
+h3 {
+  display: flex;
+  justify-content: center;
+  color: #f1f1f1;
+  font-size: 1.5rem;
+}
+
 .myCard {
   background-color: #262626;
   border-radius: 0.625rem;
