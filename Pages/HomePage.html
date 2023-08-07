@@ -230,5 +230,14 @@
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="../Script/index.js"></script>
+    <script>
+      var elem = document.querySelector(".main-carousel");
+      var flkty = new Flickity(elem, {
+        prevNextButtons: false,
+        autoPlay: 3000,
+        pageDots: false,
+        draggable: false,
+      });
+    </script>
   </body>
 </html>
