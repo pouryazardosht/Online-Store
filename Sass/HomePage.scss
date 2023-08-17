@@ -4,6 +4,10 @@
   .sliderBox {
     height: 28rem;
     margin-top: 3rem;
+    border-radius: $border-raduce !important;
+    img {
+      border-radius: $border-raduce !important;
+    }
   }
 }
 .cardsContainer {

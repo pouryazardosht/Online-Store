@@ -4,6 +4,10 @@
 .sliderConteiner .sliderBox {
   height: 28rem;
   margin-top: 3rem;
+  border-radius: 0.625rem !important;
+}
+.sliderConteiner .sliderBox img {
+  border-radius: 0.625rem !important;
 }
 
 .cardsContainer {

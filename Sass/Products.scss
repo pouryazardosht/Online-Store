@@ -1,8 +1,33 @@
 @import "Variables";
+.filterContainer {
+  background-color: $sec-color;
+  border-radius: $border-raduce;
+  margin-top: 3rem;
+  padding: 0.9rem 0 !important;
+  box-shadow: $box-shadow1;
+  input {
+    background-color: $light-color;
+    padding: 0.5rem 0.85rem;
+    border-radius: $border-raduce;
+    box-shadow: $box-shadow1;
+    border: none;
+    transition: 0.2s ease-in-out;
+    color: $first-color;
+    font-size: 0.84rem;
+    &:focus {
+      outline: none;
+      box-shadow: 0px 0px 7px 0px $third-color;
+    }
+    &::placeholder {
+      font-size: 0.84rem;
+    }
+  }
+}
 .cardBoxContainer {
   display: flex;
   align-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
   min-height: 100vh;
+  padding: 0 !important;
 }
