@@ -127,6 +127,7 @@ h3 {
     box-shadow: $box-shadow1;
     &:hover {
       scale: $hover-scale;
+      background-color: #c7a600;
     }
     &:active {
       scale: $click-scale;

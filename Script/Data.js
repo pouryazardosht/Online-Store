@@ -1,5 +1,6 @@
 const cardBox = document.querySelector(".cardBoxContainer");
 const search = document.querySelector("#search");
+const filterContainer = document.querySelector(".filterContainer");
 let productName = [];
 let products = [];
 axios.get("https://fakestoreapi.com/products").then((res) => {

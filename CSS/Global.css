@@ -142,6 +142,7 @@ h3 {
 }
 .myCard button:hover {
   scale: 0.97;
+  background-color: #c7a600;
 }
 .myCard button:active {
   scale: 0.94;
