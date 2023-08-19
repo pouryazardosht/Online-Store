@@ -1,16 +1,18 @@
 const cardBox = document.querySelector(".cardBoxContainer");
 const search = document.querySelector("#search");
 const filterContainer = document.querySelector(".filterContainer");
-let productName = [];
+const apiKey = "https://fakestoreapi.com/products";
 let products = [];
-axios.get("https://fakestoreapi.com/products").then((res) => {
+axios.get(apiKey).then((res) => {
   products = res.data;
   showData();
 });
 showData = () => {
   products.forEach((product) => {
+    let categoryArr = product.category.split(" ");
+    let category = categoryArr[0].split("'");
     cardBox.innerHTML += `
-    <div data-aos="flip-left" data-aos-duration="1000" class="myCard">
+    <div class="myCard All ${category[0]}">
     <div class="imgBox">
       <img src="${product.image}" />
     </div>
@@ -19,7 +21,23 @@ showData = () => {
     <button>خرید</button>
   </div>
     `;
-    productName.push(product.title);
   });
+  const box = document.querySelectorAll(".myCard");
+  let list = document.querySelectorAll(".list li");
+  list.forEach((el) => {
+    el.addEventListener("click", (e) => {
+      list.forEach((el1) => {
+        el1.style.color = "#f1f1f1";
+      })
+      e.target.style.color = "#ecc600"
+      box.forEach((el2) => {
+        el2.style.display = "none";
+      })
+      document.querySelectorAll(e.target.dataset.sort).forEach((el3) => {
+        console.log(el3);
+        el3.style.display = "flex";
+      })
+    })
+  })
 };
 
