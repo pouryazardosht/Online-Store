@@ -28,16 +28,35 @@ showData = () => {
     el.addEventListener("click", (e) => {
       list.forEach((el1) => {
         el1.style.color = "#f1f1f1";
-      })
-      e.target.style.color = "#ecc600"
+      });
+      e.target.style.color = "#ecc600";
       box.forEach((el2) => {
         el2.style.display = "none";
-      })
+      });
       document.querySelectorAll(e.target.dataset.sort).forEach((el3) => {
         console.log(el3);
         el3.style.display = "flex";
-      })
-    })
-  })
+      });
+    });
+  });
 };
 
+
+
+searchFilter = async (e) => {
+  const productName = await document.querySelectorAll(".myCard .productName");
+  const text = e.target.value.toLowerCase();
+
+  productName.forEach((product) => {
+    const item = product.textContent;
+
+    if (item.toLowerCase().indexOf(text) != -1) {
+      product.parentElement.style.display = "flex";
+      // noResult.style.display = "none";
+    } else {
+      product.parentElement.style.display = "none";
+      // noResult.style.display = "block";
+    }
+  });
+}
+search.addEventListener("keyup", searchFilter);
